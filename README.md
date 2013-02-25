@@ -2,15 +2,30 @@ JavaSpringGranny
 ================
 
 Granny's Addressbook with Java + Spring MVC + PostgreSQL
+Install database
+----------------
+Install the database.
+* NOTE: You may need to setup trusted authentication for localhost. This is done by editing the [pg_hba.conf](http://www.postgresql.org/docs/devel/static/auth-pg-hba-conf.html) file.
+<pre><code> sudo apt-get install postgresql-9.1</code></pre>
+* make a user called postgres and Start the postgresql server. Documentation regarding this can be found [here](http://www.postgresql.org/docs/9.1/static/server-start.html)
+* Create a database called granny by following command <pre><code> </code>CREATE DATABASE granny;</pre>
+* Create a user/role called granny by following command <pre><code> </code>CREATE USER granny WITH password 'granny';</pre>
+* Grant all privileges to the granny user/role by following command <pre><code> GRANT ALL PRIVILEGES ON DATABASE granny to granny; </code></pre>
 
+Checkout Project from git
+-------------------------
 1. Install git  <code>sudo apt-get install git</code>
 2. Do a <code> git clone https://github.com/osintegrators/JavaSpringGranny.git </code>
 2. Open up your IDE ( Eclipse / STS preffered ) and go to File -> Import -> General -> Existing projects into workspace
-3. Import the project.
+
+Build
+-----
 4. Perform a Project -> Clean
 5. Right click on the pom.xml and do a Maven -> clean, and a Maven -> install.
 6. Right click on Project and Run As -> Run On server.
 7. You might need to create a new server environment.
+Run
+---
 8. This project can be deployed on any of the following
 8.1 Tomcat
 8.2 vFabric tcServer
