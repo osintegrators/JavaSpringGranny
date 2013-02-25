@@ -3,8 +3,7 @@ JavaSpringGranny
 
 Granny's Addressbook with Java + Spring MVC + PostgreSQL
 
-1. Install git 
-<pre><code>sudo apt-get install git</code></pre>
+1. Install git  <code>sudo apt-get install git</code>
 2. Do a <code> git clone https://github.com/osintegrators/JavaSpringGranny.git </code>
 2. Open up your IDE ( Eclipse / STS preffered ) and go to File -> Import -> General -> Existing projects into workspace
 3. Import the project.
