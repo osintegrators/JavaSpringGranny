@@ -27,10 +27,10 @@ Build
 
 Run
 ---
-8. This project can be deployed on any of the following
-* Tomcat
-* vFabric tcServer
-* JBoss Application Server
+* This project can be deployed on any of the following
+<br> Tomcat
+<br> vFabric tcServer
+<br> JBoss Application Server
 9. After you create a server, Deploy the project on the server. 
 10. Note: If your IDE does not have the facility to run on an server from within, you can do a mvn package from the command line and deploy the .war file directly on an external server
 11. Browse to <code>http://localhost:8080/JavaSpringGranny/</code>
